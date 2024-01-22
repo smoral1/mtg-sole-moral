@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 25% 1fr;
+    grid-template-rows: 50px 1fr 50px;
+    grid-template-areas: 
+    "zh     zh"
+    "zn     zs"
+    "zf     zf";
+}
+header{
+    grid-area: zh;
+}
+nav{
+    grid-area: zn;
+}
+section{
+    grid-area: zs;
+}
+footer{
+    grid-area: zf;
+}
